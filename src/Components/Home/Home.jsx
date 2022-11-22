@@ -4,7 +4,7 @@ import "./Home.css";
 export class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="min-h-screen">
         <div className="flex flex-wrap flex-row justify-center mt-6">
           <div className="avatar">
             <div className="sm:w-80 xs:w-80 md:w-96 lg:w-96 rounded-full">

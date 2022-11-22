@@ -38,35 +38,27 @@ export class Navbar extends Component {
             <div className="flex-none hidden lg:block">
               <ul className="menu menu-horizontal">
                 {/* desktop */}
-                <Router>
-                  <li>
-                    <Link to="/">Home</Link>
-                  </li>
-                  <li>
-                    <Link to="/about">About</Link>
-                  </li>
-                  <li>
-                    <Link to="/resume">Resume</Link>
-                  </li>
-                  <li>
-                    <Link to="/portfolio">Portfolio</Link>
-                  </li>
-                  <li>
-                    <Link to="/contact">Contact</Link>
-                  </li>
 
-                  <Routes>
-                    <Route exact path="/" component={<Home />}></Route>
-                    <Route exact path="/about" component={<About />}></Route>
-                    <Route exact path="/resume" component={<Resume />}></Route>
-                    <Route exact path="/portfolio" component={<Portfolio />}></Route>
-                    <Route exact path="/contact" component={<Contact />}></Route>
-                  </Routes>
-                </Router>
+                <li>
+                  <a>Home</a>
+                </li>
+                <li>
+                  <a>About</a>
+                </li>
+                <li>
+                  <a>Resume</a>
+                </li>
+                <li>
+                  <a>Portfolio</a>
+                </li>
+                <li>
+                  <a>Contact</a>
+                </li>
               </ul>
             </div>
           </div>
           {/* Content */}
+
           <div>
             <Home></Home>
           </div>
