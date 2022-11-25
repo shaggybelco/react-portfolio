@@ -8,14 +8,20 @@ import "primereact/resources/primereact.min.css";                  //core css
 import "primeicons/primeicons.css"; //icons 
 import PrimeReact from 'primereact/api';
 import Navbar from './Components/Navbar/Navbar';
+import About from './Components/About/About';
+import Resume from './Components/Resume/Resume';
+import Portfolio from './Components/Portfolio/Portfolio';
+import Contact from './Components/Contact/Contact';
+import { Route, Routes } from 'react-router';
 
 function App() {
   PrimeReact.ripple = true;
   PrimeReact.inputStyle = 'filled';
   return (
-    <div className="App">
-      <div><Navbar></Navbar></div>
-    </div>
+    <>
+    <Navbar />
+      
+    </>
   );
 }
 

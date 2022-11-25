@@ -40,59 +40,51 @@ export class Navbar extends Component {
                 {/* desktop */}
 
                 <li>
-                  <a>Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a>About</a>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <a>Resume</a>
+                  <Link to="/resume">Resume</Link>
                 </li>
                 <li>
-                  <a>Portfolio</a>
+                  <Link to="/portfolio">Portfolio</Link>
                 </li>
                 <li>
-                  <a>Contact</a>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
           </div>
           {/* Content */}
 
-          <div>
-            <Home></Home>
-          </div>
-          <div>
-            <About></About>
-          </div>
-          <div>
-            <Resume></Resume>
-          </div>
-          <div>
-            <Portfolio></Portfolio>
-          </div>
-          <div>
-            <Contact></Contact>
-          </div>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/resume" element={<Resume />}></Route>
+            <Route path="/portfolio" element={<Portfolio />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+          </Routes>
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80 bg-base-100">
             {/* Mobile */}
             <li>
-              <a>Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a>About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a>Resume</a>
+              <Link to="/resume">Resume</Link>
             </li>
             <li>
-              <a>Portfolio</a>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
             <li>
-              <a>Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
